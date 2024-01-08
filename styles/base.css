@@ -1,0 +1,20 @@
+:root{
+    --primario: #fff;
+}
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+#content {
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
