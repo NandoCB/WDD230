@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
 :root{
-    --primario: #fff;
+    --grey: rgb(126, 124, 124);
+    --orange: rgb(252, 165, 4);
 }
 
-
-html {
+body, html {
     box-sizing: border-box;
     font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
 }
-
 
 *, *:before, *:after {
     box-sizing: inherit;
@@ -18,3 +20,92 @@ html {
     max-width: 1600px;
 }
 
+
+h1{
+    text-align: center;
+    font-size: 4rem;
+    margin: 0;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1.4rem;
+}
+
+.name{
+    background-color: var(--grey);
+    padding: 4rem;
+}
+
+.firstNav{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  
+}
+
+.firstNav li{
+    display: inline-block;
+    
+}
+
+.firstNav li a{
+   
+    text-decoration: none;
+    margin-right: 2rem;
+    font-size: 2rem;
+    
+}
+
+.firstNav li a:hover{
+    color: var(--orange);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.imgProfile {
+    width: 30%;
+    border-radius: 2rem;
+    grid-column: 1/2;
+    place-self: center;
+   
+}
+
+.card{
+    grid-column: 2/3;
+}
+
+.secondNav li{
+    margin-bottom: 2rem;
+    list-style: none;   
+}
+
+.secondNav li a{
+    text-decoration: none;
+    font-size: 2rem; 
+}
+
+.secondNav li a:hover{
+    color: var(--orange);
+}
+
+footer {
+    background: var(--grey);
+    padding: .1rem;
+    
+}
+
+footer img{
+    width: 1.6rem;
+    margin-left: 1rem;
+}
