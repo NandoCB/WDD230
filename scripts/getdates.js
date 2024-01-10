@@ -26,6 +26,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var dateElement = document.getElementById("lastModified");
     if (dateElement) {
-        dateElement.textContent = "Last modification: " + formattedDate;
+        dateElement.textContent = "Last Modification: " + formattedDate;
     }
 });
