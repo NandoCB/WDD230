@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a7e174bff5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -49,17 +50,74 @@
                 <section class="card">
                     <h3>Information</h3>
 
-                    <p id="counterVisits"></p>
+                    <div class="views">
+                        <img src="images/eyes.png" alt="eyes">
+                        <p id="counterVisits"></p>
+                    </div>
+
+                    <div class="weather">
+                        <div class="weather__container">
+                            
+                            <div class="weather__container__searchBox">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <input type="text" placeholder="Enter your location">
+                                <!--<p>MontevURUGUAY</p>-->
+                                <button class="fa-solid fa-magnifying-glass"></button>
+                            </div>
+
+                            <div class="weather__notFound">
+                                <img src="images/error404.webp" alt="errorMessagge">
+                                <p>Invalid Location</p>
+                            </div>
+
+                            <div class="weather__box">
+                                <img src="images/clear.png" alt="image">
+                                <p class="temperature"></p>
+                                <p class="description"></p>
+                            </div>
+
+                            <div class="weather__details">
+                                <div class="weather__details__humidity">
+                                    <i class="fa-solid fa-water"></i>
+                                    <div class="weather__details__text">
+                                        <span></span>
+                                        <p>Humidity</p>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="weather__details__wind">
+                                    <i class="fa-solid fa-wind"></i>
+                                    <div class="weather__details__text">
+                                        <span></span>
+                                        <p>Wind Speed</p>
+                                    </div>
+                                </div>
+
+                                <div class="weather__details__feelsLike">
+                                    <i class="fa-solid fa-temperature-half"></i>
+                                    <div class="weather__details__text">
+                                        <span></span>
+                                        <p>Thermal Sensation</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
                 </section>
             </main>
     
             <footer>
                 <p>&#169; 2024 - Fernando Cardozo - Uruguay <img class="flag" src="images/1f1fa-1f1fe.png" alt="flag"> </p>
                 <p id="lastModified"></p>
-                <p></p>
             </footer>
     
             <script src="scripts/getdates.js"></script>
+            <script src="scripts/weather.js"></script>
         </div>
     </body>
 </html>

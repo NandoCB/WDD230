@@ -22,7 +22,13 @@ document.addEventListener("DOMContentLoaded", function() {
    
     var lastModification = document.lastModified;
 
-    var options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric'};
+    var options = { year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                    hour: 'numeric',
+                    minute: 'numeric',
+                    second: 'numeric'
+                };
 
     var formattedDate = new Date(lastModification).toLocaleDateString("en-US", options);
 

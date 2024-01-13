@@ -1,0 +1,44 @@
+html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+h2{
+    text-align: center;
+}
+
+header{
+    background: yellow;
+    padding: 50px;
+
+}
+
+#space{
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    gap: 3px;
+}
+
+main{
+    background: green;
+    padding: 150px;
+    grid-column: 1/2;
+}
+
+aside{
+    background: violet;
+    padding: 40px;
+    grid-column: 2/3;
+}
+
+footer{
+    background: red;
+    padding: 30px;
+}
