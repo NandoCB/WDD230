@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     visits++;
 
-    document.getElementById("counterVisits").textContent = "Views: " + visits;
+    document.getElementById("counterVisits").textContent = "Page Views: " + visits;
 
     localStorage.setItem("visits", visits.toString());
 });

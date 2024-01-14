@@ -12,7 +12,12 @@
     <body>
         <div id="content">
             <header class="headerContent">
+                <div class="studentName">
                 <h1 class="name">Fernando Cardozo</h1>
+                </div>
+                <div class="studentPhoto">
+                    <img src="images/me.jpg" alt="">
+                </div>
             </header>
             
             <nav class="firstNav">
@@ -25,91 +30,132 @@
                 </ul>
             </nav>
             
-            <main class="grid">
-                <img class = "imgProfile" src="images/me.jpg" alt="image">
-               
-                <section class="card">
+            <main>
+                <section class="firstCard">
                     <h2>WDD 230: Web Frontend Development</h2>
                     <h3>Learning Activities:</h3>
     
                     <ul class="secondNav">
-                        <li><a href="#">Week 01</a></li>
-                        <li><a href="#">Week 02</a></li>
-                        <li><a href="#">Week 03</a></li>
-                        <li><a href="#">Week 04</a></li>
-                        <li><a href="#">Week 05</a></li>
-                        <li><a href="#">Week 06</a></li>
-                        <li><a href="#">Week 07</a></li>
-                        <li><a href="#">Week 08</a></li>
-                        <li><a href="#">Week 09</a></li>
-                        <li><a href="#">Week 10</a></li>
+                        <li>
+                            <p>Week 01 Assignments:</p>
+                            <a href="w1/index.html">CSS Layout Review ||</a>
+                            <a href="https://codepen.io/NandoCB-the-flexboxer/pen/vYPKMrE">Applied JavaScript</a>
+                        </li>
+                        <li class="line">
+                            <p>Week 02 Assignments:<i class="fa-solid fa-lock"></i></p>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <p>Week 04 Assignments:<i class="fa-solid fa-lock"></i></p>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <p>Week 05 Assignments:<i class="fa-solid fa-lock"></i></p>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <p>Week 06 Assignments:<i class="fa-solid fa-lock"></i></p>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <p>Week 07 Assignments:<i class="fa-solid fa-lock"></i></p>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <p>Week 08 Assignments:<i class="fa-solid fa-lock"></i></p>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <p>Week 09 Assignments:<i class="fa-solid fa-lock"></i></p>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <p>Week 10 Assignments: <i class="fa-solid fa-lock"></i></p>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                        </li>
+                        
+
+          
+
                     </ul>
-    
-                </section>
-    
-                <section class="card">
-                    <h3>Information</h3>
-
-                    <div class="views">
-                        <img src="images/eyes.png" alt="eyes">
-                        <p id="counterVisits"></p>
-                    </div>
-
-                    <div class="weather">
-                        <div class="weather__container">
-                            
-                            <div class="weather__container__searchBox">
-                                <i class="fa-solid fa-location-dot"></i>
-                                <input type="text" placeholder="Enter your location">
-                                <!--<p>MontevURUGUAY</p>-->
-                                <button class="fa-solid fa-magnifying-glass"></button>
-                            </div>
-
-                            <div class="weather__notFound">
-                                <img src="images/error404.webp" alt="errorMessagge">
-                                <p>Invalid Location</p>
-                            </div>
-
-                            <div class="weather__box">
-                                <img src="images/clear.png" alt="image">
-                                <p class="temperature"></p>
-                                <p class="description"></p>
-                            </div>
-
-                            <div class="weather__details">
-                                <div class="weather__details__humidity">
-                                    <i class="fa-solid fa-water"></i>
-                                    <div class="weather__details__text">
-                                        <span></span>
-                                        <p>Humidity</p>
-                                    </div>
-                                </div>
-
-                                
-                                <div class="weather__details__wind">
-                                    <i class="fa-solid fa-wind"></i>
-                                    <div class="weather__details__text">
-                                        <span></span>
-                                        <p>Wind Speed</p>
-                                    </div>
-                                </div>
-
-                                <div class="weather__details__feelsLike">
-                                    <i class="fa-solid fa-temperature-half"></i>
-                                    <div class="weather__details__text">
-                                        <span></span>
-                                        <p>Thermal Sensation</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-
                 </section>
             </main>
+    
+                
+    
+            <section class="secondCard">
+                <h3>Information</h3>
+
+                <div class="views">
+                    <img src="images/eyes.png" alt="eyes">
+                    <p id="counterVisits"></p>
+                </div>
+
+                <div class="weather">
+                    <div class="weather__container">
+                        
+                        <div class="weather__container__searchBox">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <input type="text" placeholder="Enter your location">
+                            <!--p>MONTEVIDEO, URUGUAY</p-->
+                            <button class="fa-solid fa-magnifying-glass"></button>
+                        </div>
+
+                        <div class="weather__notFound">
+                            <img src="images/error404.webp" alt="errorMessagge">
+                            <p>Invalid Location</p>
+                        </div>
+
+                        <div class="weather__box">
+                            <img src="images/clear.png" alt="image">
+                            <p class="temperature"></p>
+                            <p class="description"></p>
+                        </div>
+
+                        <div class="weather__details">
+                            <div class="weather__details__humidity">
+                                <i class="fa-solid fa-water"></i>
+                                <div class="weather__details__text">
+                                    <span></span>
+                                    <p>Humidity</p>
+                                </div>
+                            </div>
+
+                            
+                            <div class="weather__details__wind">
+                                <i class="fa-solid fa-wind"></i>
+                                <div class="weather__details__text">
+                                    <span></span>
+                                    <p>Wind Speed</p>
+                                </div>
+                            </div>
+
+                            <div class="weather__details__feelsLike">
+                                <i class="fa-solid fa-temperature-half"></i>
+                                <div class="weather__details__text">
+                                    <span></span>
+                                    <p>Thermal Sensation</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209591.73836892511!2d-56.36228399123631!3d-34.834338012271026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f80ffc63bf7d3%3A0x6b321b2e355bec99!2sMontevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1705190603070!5m2!1ses-419!2suy"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+            
     
             <footer>
                 <p>&#169; 2024 - Fernando Cardozo - Uruguay <img class="flag" src="images/1f1fa-1f1fe.png" alt="flag"> </p>
