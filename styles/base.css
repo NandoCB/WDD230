@@ -129,7 +129,7 @@ p{
 }
 
 .secondNav li p{
-    font-family: 'roboto' sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 2rem;
     color: var(--blue);
 }
@@ -159,7 +159,7 @@ p{
 
 .secondCard h3{
     text-align: center;
-    font-family: 'roboto' sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 3rem;
 }
 
@@ -174,7 +174,7 @@ p{
 
 .views p{
     font-size: 2rem;
-    font-family: 'roboto' sans-serif;
+    font-family: "Roboto", sans-serif;
     
 }
 
@@ -196,7 +196,7 @@ p{
     background: var(--white);
     padding: 2.8rem 3.2rem;
     overflow: hidden;
-    font-family: 'Roboto' sans-serif;
+    font-family: "Roboto", sans-serif;
     transition: .6s ease-out;
     border-radius: 2rem;
 }
