@@ -5,6 +5,10 @@
 :root{
     --grey: rgb(126, 124, 124);
     --orange: rgb(252, 165, 4);
+    --blue: blue;
+    --white: #fff;
+    --navy-blue: #06283D;
+    --yellow: #FFCA03;
 }
 
 body, html {
@@ -12,6 +16,8 @@ body, html {
     font-size: 62.5%;
     font-family: 'Poppins', sans-serif;
     background: #F5F5F5;
+    
+    
 }
 
 *, *:before, *:after {
@@ -22,7 +28,6 @@ body, html {
     margin: 0 auto;
     max-width: 1600px;
 }
-
 
 h1{
     text-align: center;
@@ -46,11 +51,11 @@ p{
 1. Header
 ***********/
 .headerContent {
-    text-align: center; /* Centra los elementos hijos horizontalmente */
+    text-align: center;
 }
   
 .studentPhoto {
-    display: inline-block; /* Permite centrar la imagen */
+    display: inline-block;
 }
   
 .name{
@@ -65,28 +70,47 @@ p{
 /**********
 2. Menu - navigation
 ***********/
+
 .firstNav{
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
     display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-  
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .firstNav li{
-    display: inline-block;
-    
+    padding: 1rem;
+    font-size: 2rem;
+    list-style: none;
 }
 
 .firstNav li a{
-   
     text-decoration: none;
-    margin-right: 2rem;
-    font-size: 2rem;
-    
 }
 
 .firstNav li a:hover{
     color: var(--orange);
+}
+
+.toggleMenu{
+    width: 40px;
+    cursor: pointer;
+    margin-top: 2rem;
+    
+}
+
+.toggleMenu img{
+    max-width: 100%;
+}
+
+
+
+.hidden {
+    display: none;
 }
 
 
@@ -107,7 +131,7 @@ p{
 .secondNav li p{
     font-family: 'roboto' sans-serif;
     font-size: 2rem;
-    color: blue;
+    color: var(--blue);
 }
 
 .secondNav li a{
@@ -121,7 +145,7 @@ p{
 }
 
 .fa-lock{
-    color: orange;
+    color: var(--orange);
     margin-left: 1rem ;
 }
 
@@ -169,7 +193,7 @@ p{
     position: relative;
     width: 60rem;
     height: 10rem;
-    background: #fff;
+    background: var(--white);
     padding: 2.8rem 3.2rem;
     overflow: hidden;
     font-family: 'Roboto' sans-serif;
@@ -201,7 +225,7 @@ p{
 .weather__container__searchBox input::placeholder{
     font-size: 20px;
     font-weight: 500;
-    color: #FFCA03;
+    color: var(--yellow);
     text-transform: capitalize;
 }
 
@@ -209,22 +233,22 @@ p{
     cursor: pointer;
     width: 50px;
     height: 50px;
-    color: #FFCA03;
-    background: #fff;
+    color: var(--yellow);
+    background: var(--white);
     border-radius: 50%;
-    border-color: #FFCA03;
+    border-color: var(--yellow);
     font-size: 22px;
     transition: 0.4s ease;
 }
 
 .weather__container__searchBox button:hover{
-    color: #fff;
-    background: #06283D;
+    color: var(--white);
+    background: var(--navy-blue);
 }
 
 .weather__container__searchBox i{
     position: absolute;
-    color: #06283D;
+    color: var(--navy-blue);
     font-size: 28px;
 }
 
@@ -239,7 +263,7 @@ p{
 
 .weather__box .temperature{
     position: relative;
-    color: #06283D;
+    color: var(--navy-blue);
     font-size: 4rem;
     font-weight: 800;
     margin-top: 30px;
@@ -253,7 +277,7 @@ p{
 }
 
 .weather__box .description{
-    color: #06283D;
+    color: var(--navy-blue);
     font-size: 22px;
     font-weight: 500;
     text-transform: capitalize;
@@ -280,20 +304,20 @@ p{
 }
 
 .weather__details i{
-    color: #06283D;
+    color: var(--navy-blue);
     font-size: 26px;
     margin-right: 10px;
     margin-top: 6px;
 }
 
 .weather__details span{
-    color: #06283D;
+    color: var(--navy-blue);
     font-size: 22px;
     font-weight: 500;
 }
 
 .weather__details p{
-    color: #06283D;
+    color: var(--navy-blue);
     font-size: 14px;
     font-weight: 500;
 }
@@ -313,7 +337,7 @@ p{
 
 
 .weather__notFound p{
-    color: #06283D;
+    color: var(--navy-blue);
     font-size: 22px;
     font-weight: 500;
     margin-top: 12px;

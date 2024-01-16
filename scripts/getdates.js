@@ -1,3 +1,37 @@
+//Menu
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleMenu = document.getElementById('toggleMenu');
+    const navMenu = document.getElementById('navMenu');
+    const menuIcon = document.getElementById('menuIcon');
+
+    function toggleMenuVisibility() {
+        navMenu.classList.toggle('hidden');
+        
+        menuIcon.src = navMenu.classList.contains('hidden') ? 'images/bars-icon.png' : 'images/cross-icon.png';
+    }
+
+    toggleMenu.addEventListener('click', toggleMenuVisibility);
+
+    //Automatically hide menu on page load if width is less than 768px
+    if (window.innerWidth < 768) {
+        navMenu.classList.add('hidden');
+    }
+
+    //Add a resize event to hide the menu when the width is less than 768px
+    window.addEventListener('resize', function () {
+        if (window.innerWidth < 768) {
+            navMenu.classList.add('hidden');
+        } else {
+            navMenu.classList.remove('hidden');
+        }
+    });
+});
+
+
+
+
+
+
 //Viwes
 
 document.addEventListener("DOMContentLoaded", function() {
