@@ -364,6 +364,14 @@ p{
 /* c. Footer
 */
 
+.map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*Footer*/
+
 footer {
     text-align: center;
     background: var(--grey);
