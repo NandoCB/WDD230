@@ -437,7 +437,7 @@ main{
     column-count: 2; 
     column-gap: 20px; 
     padding: 0;
-    margin: 4rem auto;
+    margin: 4rem auto 0 auto;
     max-width: 1200px; 
     justify-content: center;
     
@@ -633,4 +633,5 @@ main{
   .footer-menu li a {
     font-size: 14px;
     color: #878787;
+    text-decoration: none;
 }
